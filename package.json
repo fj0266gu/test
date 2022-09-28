@@ -10,7 +10,8 @@
     ],
     "main": "webapp/index.html",
     "dependencies": {
-        "vscode": "^1.1.37"
+        "vscode": "^1.1.37",
+        "wdio": "^6.0.1"
     },
     "devDependencies": {
         "@sap/ui5-builder-webide-extension": "^1.1.8",
