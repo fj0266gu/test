@@ -33,7 +33,8 @@
         "build:cf": "ui5 build preload --clean-dest --config ui5-deploy.yaml --include-task=generateManifestBundle generateCachebusterInfo",
         "build:mta": "rimraf resources mta_archives && mbt build",
         "undeploy": "cf undeploy test --delete-services --delete-service-keys --delete-service-brokers",
-        "test": "jest"
+        "test": "jest",
+        "wdio": "wdio"
     },
     "ui5": {
         "dependencies": [
