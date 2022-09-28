@@ -1,16 +1,3 @@
-/*global QUnit*/
-
-sap.ui.define([
-	"test/controller/View1.controller"
-], function (Controller) {
-	"use strict";
-
-	QUnit.module("View1 Controller");
-
-	QUnit.test("I should test the View1 controller", function (assert) {
-		var oAppController = new Controller();
-		oAppController.onInit();
-		assert.ok(oAppController);
-	});
-
+test('adds 1 + 2 to equal 3', () => {
+    expect(1 + 2).toBe(3);
 });
