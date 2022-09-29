@@ -19,7 +19,9 @@
         "@ui5/cli": "^2.14.1",
         "jest": "^29.1.0",
         "mbt": "^1.2.18",
-        "ui5-task-zipper": "^0.5.0"
+        "ui5-task-zipper": "^0.5.0",
+        "wdio-selenium-standalone-service": "^0.0.12",
+        "webdriverio": "^7.25.0"
     },
     "scripts": {
         "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#test-display\"",
@@ -35,7 +37,7 @@
         "build:mta": "rimraf resources mta_archives && mbt build",
         "undeploy": "cf undeploy test --delete-services --delete-service-keys --delete-service-brokers",
         "test": "jest",
-        "wdio": "wdio"
+        "wdio": "wdio wdio.conf.js"
     },
     "ui5": {
         "dependencies": [
