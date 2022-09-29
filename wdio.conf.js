@@ -129,7 +129,8 @@ exports.config = {
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
-        require: 'intelli-espower-loader'
+        require: 'intelli-espower-loader',
+        timeout: 5000
     },
     //
     // =====
