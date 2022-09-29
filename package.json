@@ -21,8 +21,7 @@
         "mbt": "^1.2.18",
         "ui5-task-zipper": "^0.5.0",
         "wdio-selenium-standalone-service": "^0.0.12",
-        "webdriverio": "^7.25.0",
-        "@wdio/cli": "7.25.0"
+        "webdriverio": "^7.25.0"
     },
     "scripts": {
         "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#test-display\"",
