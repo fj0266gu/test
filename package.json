@@ -17,9 +17,15 @@
         "@sap/ui5-builder-webide-extension": "^1.1.8",
         "@sap/ux-ui5-tooling": "1",
         "@ui5/cli": "^2.14.1",
+        "@wdio/cli": "^7.25.0",
+        "@wdio/local-runner": "^7.25.0",
+        "@wdio/mocha-framework": "^7.25.0",
+        "@wdio/spec-reporter": "^7.25.0",
+        "chromedriver": "^106.0.0",
         "jest": "^29.1.0",
         "mbt": "^1.2.18",
         "ui5-task-zipper": "^0.5.0",
+        "wdio-chromedriver-service": "^7.3.2",
         "wdio-selenium-standalone-service": "^0.0.12",
         "webdriverio": "^7.25.0"
     },
@@ -37,7 +43,7 @@
         "build:mta": "rimraf resources mta_archives && mbt build",
         "undeploy": "cf undeploy test --delete-services --delete-service-keys --delete-service-brokers",
         "test": "jest",
-        "wdio": "wdio"
+        "wdio": "wdio run wdio.conf.js"
     },
     "ui5": {
         "dependencies": [
