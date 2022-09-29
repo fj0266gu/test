@@ -77,7 +77,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'localhost',
+    baseUrl: 'https://4339639atrial.launchpad.cfapps.us10.hana.ondemand.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
