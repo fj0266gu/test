@@ -1,3 +1,12 @@
+class CustomService {
+    onPrepare() {
+        console.log('=== onPrepare hook ===');
+    }
+    onComplete() {
+        console.log('=== onComplete hook ===');
+    }
+}
+
 exports.config = {
     //
     // ====================
