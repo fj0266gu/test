@@ -20,14 +20,14 @@ describe('CID Test', function() {
       console.log("title=" + title);
       assert(title === 'Log On');
       var user = await browser.$('input#j_username');
-      await user.setValue('fj0266gu@fujitsu.com');
+      await user.setValue('kei.nakata@jp.fujitsu.com');
       var button = await browser.$('button');
       await button.click();
       title = await browser.getTitle();
       console.log("title=" + title);
       assert(title === 'SAP Universal ID');
       var pass = await browser.$('input#password');
-      await pass.setValue('X10580@nob');
+      await pass.setValue('Monster8!');
       button = await browser.$('button');
       await button.click();
       title = await browser.getTitle();
