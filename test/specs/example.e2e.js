@@ -26,7 +26,7 @@ describe('CID Test', function() {
       title = await browser.getTitle();
       console.log("title=" + title);
       assert(title === 'Log On');
-      var pass = await browser.$('input#password');
+      var pass = await browser.$('input#j_password');
       await pass.setValue('Monster8!');
       button = await browser.$('button');
       await button.click();
