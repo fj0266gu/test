@@ -26,9 +26,9 @@ describe('CID Test', function() {
       title = await browser.getTitle();
       console.log("title=" + title);
       assert(title === 'SAP Universal ID');
-      var pass = await $('');
+      var pass = await browser.$('input#password');
       await pass.setValue('X10580@nob');
-      button = await $('button');
+      button = await browser.$('button');
       await button.click();
       title = await browser.getTitle();
       console.log("title=" + title);
