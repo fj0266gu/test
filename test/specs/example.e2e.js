@@ -15,7 +15,7 @@ const assert = require('assert');
 
 describe('CID Test', function() {
    it('should display the title', function() {
-       browser.url('/index.html');
+       browser.url('/4d8324b4-f741-4854-912b-a9947e2fcbf3.test.test-0.0.1/index.html');
        console.log(browser.getTitle());
        assert(browser.getTitle() === 'CID Test');
    });
