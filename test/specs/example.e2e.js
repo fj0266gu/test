@@ -13,8 +13,8 @@
 //});
 const assert = require('assert');
 
-describe('CID Test', async () => {
-   it('should display the title', function() {
+describe('CID Test', function() {
+   it('should display the title', async () => {
       browser.url('/4d8324b4-f741-4854-912b-a9947e2fcbf3.test.test-0.0.1/index.html');
       var title = await browser.getTitle();
       console.log("title=" + title);
