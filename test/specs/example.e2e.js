@@ -19,7 +19,7 @@ describe('CID Test', function() {
       var title = await browser.getTitle();
       console.log("title=" + title);
       assert(title === 'Log On');
-      var user = await browser.$('input');
+      var user = await browser.$('input#j_username');
       await user.setValue('fj0266gu@fujitsu.com');
       var button = await browser.$('button');
       await button.click();
