@@ -34,7 +34,7 @@ describe('CID Test', function() {
       console.log("title=" + title);
       assert(title === 'CID Test');
       await browser.pause(30000);
-      var target = await browser.$('span#container-test---View1--target');
+      var target = await browser.$('span#container-test---View1--target').getText();
       console.log("target=" + target);
       assert(target === 'Hello World!');
    });
