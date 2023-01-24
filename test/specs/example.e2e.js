@@ -33,6 +33,9 @@ describe('CID Test', function() {
       title = await browser.getTitle();
       console.log("title=" + title);
       assert(title === 'CID Test');
+      var target = await browser.$('span#container-test---View1--target');
+      console.log("target=" + target);
+      assert(target === 'Hello World!');
    });
 });
 
